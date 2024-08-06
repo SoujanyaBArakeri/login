@@ -1,0 +1,53 @@
+.gradient {
+  background: linear-gradient(202deg, 
+  #ff0000 0%, #ff7f7f 5%, 
+  #ff7f00 10%, #ffbf80 15%, 
+  #ffff00 20%, #ffff80 25%, 
+  #00ff00 30%, #80ff80 35%, 
+  #0000ff 40%, #8080ff 45%, 
+  #4b0082 50%, #9f82cc 55%, 
+  #8b00ff 60%, #bf80ff 65%, 
+  #ff0000 70%, #ff7f7f 75%, 
+  #ff7f00 80%, #ffbf80 85%, 
+  #ffff00 90%, #ffff80 95%, 
+  #00ff00 100%
+);
+  background-size: 2400% 2400%;
+  animation: AnimationName 5s ease infinite; /* Changed duration from 20s to 5s */
+}
+
+@keyframes AnimationName {
+  0% { background-position: 32% 0%; }
+  50% { background-position: 69% 100%; }
+  100% { background-position: 32% 0%; }
+}
+
+
+.btn {
+    font-family: "Clash Grotesk";
+    font-size: 1rem; /* Adjusted font size */
+    letter-spacing: 2px;
+    padding: 0.8rem 2rem; /* Smaller padding */
+    border-radius: 0.2rem; /* Smaller border radius */
+    cursor: pointer;
+    background-color: rgb(14, 14, 26);
+    color: rgb(234, 234, 234);
+    font-weight: 600;
+    transition: 0.6s;
+   
+  }
+  
+  .btn:active {
+    transform: scale(0.92); /* Corrected the scale transform */
+  }
+  
+  .btn:hover {
+    color: rgb(4, 4, 38);
+    background: linear-gradient(to right, #9cecfb, #65c7f7, #0052d4);
+  }
+  
+  .hero{
+    font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  }
+

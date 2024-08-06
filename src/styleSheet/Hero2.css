@@ -1,0 +1,111 @@
+
+
+.card {
+    width: 300px;
+    height: 600px;
+   display: block;
+    overflow: hidden;
+  }
+  
+  .card-content {
+    position: relative;
+    padding: 15rem 5rem;
+    transform-style: preserve-3d;
+    transition: transform 3s;
+    
+  }
+  .card:hover .card-content {
+    transform: rotateY(180deg);
+  }
+  
+  .card-front,
+  .card-back {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+  }
+  
+  .card-front,
+  .card-back {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    color: white;
+  }
+  .card-front {
+    background-image: url(https://i.pinimg.com/564x/7a/0b/1a/7a0b1a5eb7b5275e84ec6e434b360742.jpg);
+    background-color: rgba(255, 163, 42, 0.2);
+    align-items: center;
+    height: 500px;
+    border-radius: 2vh;
+  }
+  .card-front::before {
+    content: "";
+    position: absolute;
+    inset: 1rem;
+    border: 3px solid greenyellow;
+    transform: translateZ(2rem);
+  }
+  .title {
+    font-family: "Teko", sans-serif;
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    line-height: 120%;
+    transform: translateZ(4.4rem);
+  }
+  .sub-title {
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    transform: translateZ(3rem);
+  }
+  
+  .card-back {
+    background-image: url(https://i.pinimg.com/564x/6a/1f/9b/6a1f9b07cb93ec61a766fda9872aaf14.jpg);
+    transform: rotateY(180deg);
+    gap: 0.5rem;
+    height: 500px;
+    border-radius: 2vh;
+  }
+  .back-title {
+    font-family: "Teko", sans-serif;
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: greenyellow;
+    text-transform: uppercase;
+    
+    transform: translateZ(2rem);
+  }
+  
+  .card-back span {
+    font-weight: 600;
+    color: greenyellow;
+  }
+  .btn1 {
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 2.2rem;
+    color: greenyellow;
+    border: 2px solid white;
+    border-radius: 100px;
+    text-align: center;
+    align-self: center;
+    margin-top: 1rem;
+    transform: translateZ(2rem);
+    transition: 0.3s ease;
+  }
+  .btn1:hover {
+    background-color: rgb(175, 214, 175);
+    color: white;
+    border: 2px solid rgb(2, 170, 2);
+  }
+  
